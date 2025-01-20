@@ -1,5 +1,5 @@
 import { type JSX, Show, createSignal, For, onMount, createEffect, onCleanup, createMemo } from 'solid-js';
-import { FiMenu, FiHome, FiList, FiCode } from 'solid-icons/fi';
+import { FiMenu, FiHome, FiList, FiCode, FiArchive } from 'solid-icons/fi';
 import useBreakpoint from '~/components/hooks/useBreakpoint';
 import { useLocation, useNavigate } from '@solidjs/router';
 import NavigationMenu from '~/components/navigation-menu';
@@ -174,7 +174,7 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 							href='/plugins'
 							onClick={e => (e.preventDefault(), navigate('/plugins'))}
 						>
-							<FiList size={20} /> Repository
+							<FiArchive size={20} /> Repository
 						</NavigationMenu.Item>
 						<NavigationMenu.Item
 							class={cn('flex items-center justify-start gap-6 text-base text-secondary-fg font-normal', location.pathname === '/themes' && 'text-primary-fg font-bold')}
