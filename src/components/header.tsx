@@ -153,7 +153,7 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 								</DropdownMenu.Content>
 							</DropdownMenu.Portal>
 						</DropdownMenu.Root> */}
-						<Account />
+						
 						<Button onClick={() => setNavOpen(!navOpen())} variant='outline' size='icon' class='flex rounded-xl md:hidden'>
 							<FiMenu size={16} />
 						</Button>
