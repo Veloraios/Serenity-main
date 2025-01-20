@@ -30,7 +30,7 @@ export function Page() {
 						</a>
 					</Button>
 				</div>
-				<img class='z-0 max-h-dvh mt-16 md:mt-0' src='/img/hero.png' />
+				<img class='z-0 max-h-dvh mt-16 md:mt-0' src='/img/IMG_3530.png' />
 			</div>
 		</div>
 	</div>;
