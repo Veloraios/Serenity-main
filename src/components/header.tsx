@@ -7,6 +7,7 @@ import { animated, createSpring } from 'solid-spring';
 import Separator from '~/components/separator';
 import Account from '~/components/account';
 import { TbPuzzle } from 'solid-icons/tb';
+import { FaRegularNewspaper } from 'solid-icons/fa'
 import { Logo } from '~/components/icons';
 import Button from '~/components/button';
 import * as Routes from '~/routes';
@@ -180,7 +181,7 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 							href='/themes'
 							onClick={e => (e.preventDefault(), navigate('/themes'))}
 						>
-							<TbPuzzle size={20} /> Themes
+							<FaRegularNewspaper size={20} /> Patches/Updates
 						</NavigationMenu.Item>
 						<NavigationMenu.Item
 							class={cn('flex items-center justify-start gap-6 text-base text-secondary-fg font-normal', location.pathname === '/developers' && 'text-primary-fg font-bold')}
