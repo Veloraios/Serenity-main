@@ -1,5 +1,5 @@
 import { type JSX, Show, createSignal, For, onMount, createEffect, onCleanup, createMemo } from 'solid-js';
-import { FiMenu, AiFillHome, FiList, FiBookmark } from 'solid-icons/fi';
+import { FiMenu, FiHome, FiList, FiCode } from 'solid-icons/fi';
 import useBreakpoint from '~/components/hooks/useBreakpoint';
 import { useLocation, useNavigate } from '@solidjs/router';
 import NavigationMenu from '~/components/navigation-menu';
@@ -166,14 +166,14 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 							href='/'
 							onClick={e => (e.preventDefault(), navigate('/'))}
 						>
-							<AiFillHome size={20} /> Home
+							<FiHome size={20} /> Home
 						</NavigationMenu.Item>
 						<NavigationMenu.Item
 							class={cn('flex items-center justify-start gap-6 text-base text-secondary-fg font-normal', location.pathname === '/plugins' && 'text-primary-fg font-bold')}
 							href='/plugins'
 							onClick={e => (e.preventDefault(), navigate('/plugins'))}
 						>
-							<FiList size={20} /> Plugins
+							<FiList size={20} /> Repository
 						</NavigationMenu.Item>
 						<NavigationMenu.Item
 							class={cn('flex items-center justify-start gap-6 text-base text-secondary-fg font-normal', location.pathname === '/themes' && 'text-primary-fg font-bold')}
@@ -187,14 +187,14 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 							href='/developers'
 							onClick={e => (e.preventDefault(), navigate('/developers'))}
 						>
-							<FiList size={20} /> Developers
+							<FiCode size={20} /> Developers
 						</NavigationMenu.Item>
 						<NavigationMenu.Item
 							class={cn('flex items-center justify-start gap-6 text-base text-secondary-fg font-normal', location.pathname === '/faq' && 'text-primary-fg font-bold')}
 							href='/faq'
 							onClick={e => (e.preventDefault(), navigate('/faq'))}
 						>
-							<FiBookmark size={20} /> FAQ
+							<FiList size={20} /> FAQ
 						</NavigationMenu.Item>
 					</div>
 				</Show>
@@ -203,4 +203,4 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 	</div>;
 }
 
-export default Header;
+export default Header
