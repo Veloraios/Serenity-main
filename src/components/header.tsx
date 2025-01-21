@@ -96,8 +96,7 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 					<div class='relative'>
 						<animated.div
 							class='pointer-events-none bg-opposite/5 rounded-lg px-4 py-3 font-semibold hidden md:block absolute'
-							style={animation()}
-						/>
+							style={animation()}/>
 						<NavigationMenu.Root ref={setElement} onMouseLeave={() => setHovered(null)} class='hidden md:flex gap-2'>
 							<For each={routes}>
 								{(route) => <NavigationMenu.Item
