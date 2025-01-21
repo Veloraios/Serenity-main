@@ -170,14 +170,14 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 						</NavigationMenu.Item>
 						<NavigationMenu.Item
 							class={cn('flex items-center justify-start gap-6 text-base text-secondary-fg font-normal', location.pathname === '/plugins' && 'text-primary-fg font-bold')}
-							href='/plugins'
+							href='/repository'
 							onClick={e => (e.preventDefault(), navigate('/plugins'))}
 						>
 							<FiArchive size={20} /> Repository
 						</NavigationMenu.Item>
 						<NavigationMenu.Item
 							class={cn('flex items-center justify-start gap-6 text-base text-secondary-fg font-normal', location.pathname === '/themes' && 'text-primary-fg font-bold')}
-							href='/themes'
+							href='/updates'
 							onClick={e => (e.preventDefault(), navigate('/themes'))}
 						>
 							<FaRegularNewspaper size={20} /> Patches/Updates

@@ -4,8 +4,8 @@ import { fetch } from '~/utilities';
 
 export const showInHeader = true;
 export const headerOrder = 2;
-export const title = 'Plugins';
-export const path = '/plugins';
+export const title = 'Repository';
+export const path = '/repository';
 
 export function Page() {
 	const [data, { refetch, mutate }] = createResource(fetchPlugins, { initialValue: [] });
