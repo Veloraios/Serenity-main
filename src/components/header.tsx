@@ -94,7 +94,7 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 					<Logo 
   className="size-16 hover:scale-110 transition-all text-opposite cursor-pointer duration-300" 
   onClick={() => navigate('/')}
-  style={{ height: '50px', width: '50pxpx', borderRadius: '15px' }} 
+  style={{ height: '50px', width: '50px', borderRadius: '15px' }} 
 />
 
 					<Separator orientation='vertical' class='h-5 hidden sm:flex' />
