@@ -91,7 +91,7 @@ function Header(props: JSX.HTMLAttributes<HTMLDivElement>) {
 		<div id='header' class={cn('fixed mx-auto px-6 lg:px-0 w-full lg:w-auto mt-6 h-18 justify-center z-20 flex items-center pointer-events-none', props.class)}>
 			<div class={cn('flex flex-col w-full h-full px-5 shadow-topBorder border bg-gradient-to-b from-primary/75 pointer-events-auto to-secondary/75 backdrop-blur-md text-secondary-fg rounded-3xl')}>
 				<div class='flex items-center gap-4'>
-					<Logo class='size-16 hover:scale-110 transition-all text-opposite cursor-pointer duration-300' onClick={() => navigate('/')} />
+					<Logo class='hover:scale-110 transition-all text-opposite cursor-pointer duration-300' onClick={() => navigate('/')} />
 					<Separator orientation='vertical' class='h-5 hidden sm:flex' />
 					<div class='relative'>
 						<animated.div
