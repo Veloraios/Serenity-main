@@ -35,16 +35,17 @@ export function Page() {
         </div>
 
         {/* New section added below */}
-        <div class='mt-16 md:mt-32 relative gap-4 md:gap-6 slide-in-from-bottom-36 zoom-in-90 animate-in duration-700 fade-in w-full items-center flex flex-col'>
+        <div class='mt-16 md:mt-32 relative gap-4 md:gap-6 slide-in-from-bottom-36 zoom-in-90 animate-in duration-700 fade-in w-full items-center flex flex-col px-4 md:px-8'>
           <h3 class='text-3xl lg:text-5xl font-secondary font-bold text-center'>
             Stay Informed
           </h3>
           <p class='text-lg lg:text-2xl text-center font-secondary font-medium'>
             The latest Apple and sideloading news, delivered to you via the Serenity App. Browse news articles without leaving the app.
           </p>
-          <img class='mt-8' src='/img/image05.png' alt='Stay Informed Image' />
+          <img class='mt-8 max-w-full md:max-w-[500px] mx-auto' src='/img/image05.png' alt='Stay Informed Image' />
         </div>
       </div>
     </div>
   );
 }
+
